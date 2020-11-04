@@ -1,0 +1,10 @@
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+<h2>{{ ctx.title }}</h2>
+<p>{{ ctx.created }}</p>
+<p>{{ ctx.text }}</p>
+
+<p><a href="/news/">main</a></p>
