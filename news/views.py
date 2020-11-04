@@ -17,7 +17,7 @@ class ComingSoon(View):
 
 class NewsMain(View):
     def get(self, request, *args, **kwargs):
-        # check if search there's a search going on
+        # check if there's a search going on
         query = request.GET.get('q')
         if query:
             with open("news.json", "r") as json_file:
