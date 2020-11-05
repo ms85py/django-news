@@ -52,7 +52,7 @@ class NewsView(View):
         # if not -> 404; if it is -> display appropriate news
         with open(settings.NEWS_JSON_PATH, "r") as json_file:
             news = json.load(json_file)
-            if news_id > len(news) + 1:
+            if news_id > len(news):
                 raise Http404
             data = news[news_id - 1]
             context = {"ctx": data}
