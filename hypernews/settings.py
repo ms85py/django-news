@@ -27,6 +27,8 @@ NEWS_JSON_PATH = os.environ.get('NEWS_JSON_PATH') or NEWS_JSON_PATH  # DO NOT MO
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ph3di!j%s)v*rrl^*d6=-(1iwtp6l4i_j$r^*en+$u036=xvzi'
+# no, I don't have a problem with this being here. I won't ever use this repo for anything without setting it up anew.
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
