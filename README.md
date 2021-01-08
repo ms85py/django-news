@@ -10,7 +10,7 @@ News are saved in a .json file, from which they're also loaded (d'oh!).
 
 The main page simply lists all news found, grouped together (via itertools.groupby) by date, so that even if there's multiple news on the same day, they'll still be listed under one date.
 
-Via DTL, links to each news are created automatically, linking to, e.g., news/1, which will be fetched in urlpatterns by Djangos "news/<int:news_id>/" feature.
+Via DTL, links to each news are created automatically, linking to, e.g., news/1, which will be fetched in urlpatterns by Djangos "news/\<int:news_id\>/" feature.
 
 Clicking on any news will show them on their own page, yadda yadda.~
 
